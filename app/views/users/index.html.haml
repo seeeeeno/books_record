@@ -1,0 +1,29 @@
+.main_content
+  .books_card
+    .card_header
+      .header_character
+        %p わたしの本
+    .card_title
+      %p 図書カード
+    .add_book
+      = link_to new_book_path do
+        %p 本を追加する
+    .books_contents
+      .books_column
+        .column_started
+          読始日
+        .column_finidhed
+          読了日
+        .column_title
+          本のタイトル
+        .column_author
+          著者
+      .books_data
+        - @books.each do |book|
+          .started
+          .finidhed
+          .title
+            = book.title
+          .author 
+            = book.author
+      .footer

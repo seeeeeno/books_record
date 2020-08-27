@@ -8,7 +8,8 @@
       %p 図書カード
     .add_book
       = link_to new_book_path do
-        %p 本を追加する
+        = icon('fas', 'plus')
+        本を追加
     .books_contents
       .books_column
         .column_started
@@ -19,12 +20,15 @@
           本のタイトル
         .column_author
           著者
-      .books_data
         - @books.each do |book|
-          .started
-          .finidhed
-          .title
-            = book.title
-          .author 
-            = book.author
+          = link_to book_path(book[:id]) do
+            .books_data
+              .started
+                = book.started_at
+              .finidhed
+                = book.finished_at
+              .title
+                = book.title
+              .author 
+                = book.author
       .footer

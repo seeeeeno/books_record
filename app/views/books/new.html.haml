@@ -1,0 +1,24 @@
+.contents
+  本を追加する
+  .form
+    = form_with model: @book, local: true do |f|
+      .bookTitle
+        %p タイトル
+        = f.text_field :title, placeholder: "本のタイトル"
+      .bookAuthor
+        %p 著者
+        = f.text_field :author, placeholder: "著者"
+      .start
+        %p 読み始めた日
+        != sprintf(f.date_select(:started_at, require:true, use_month_numbers:true, date_separator:'%s'),'年 ','月 ')+'日'
+      .finished
+        %p 読み終わった日
+        != sprintf(f.date_select(:finished_at, require:true, use_month_numbers:true, prompt: "---", date_separator:'%s'),'年 ','月 ')+'日'
+      .bookPage
+        %p 総ページ数
+        = f.text_field :page, placeholder: "数字で入力"
+      .publisher
+        %p 出版社
+        = f.text_field :publisher, placeholder: "出版社"
+      .submitBtn
+        = f.submit "保存"

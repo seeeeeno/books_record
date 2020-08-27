@@ -12,10 +12,14 @@ class BooksController < ApplicationController
   def create
     @book = Book.create(book_params)
     if @book.save
-      redirect_to book_path(@book), notice: "保存しました"
+      redirect_to users_path(@book), notice: "保存しました"
     else
       render :new
     end
+  end
+
+  def show
+    @book = Book.find(params[:id])
   end
 
   def move_to_index

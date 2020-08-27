@@ -1,0 +1,81 @@
+.main_content {
+  display: flex;
+  justify-content: center;
+  .books_card {
+    width: 80vw;
+    height: calc(100vh - 350px);
+    .card_header {
+      width: 80vw;
+      height: 40px;
+      display: inline-flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      .header_character {
+        height: 35px;
+        width: 150px;
+        padding-top: 8px;
+        text-align: center;
+        background-color: mediumseagreen;
+      }
+    }
+    .card_title {
+      border-top: 10px solid mediumseagreen;
+      font-size: 30px;
+      height: 60px;
+      padding: 0 15px;
+      background-color: cornsilk;
+      border-bottom-style: dotted;
+
+    }
+    .add_book {
+      background-color: cornsilk;
+      text-align: right;
+      height: 70px;
+      border-bottom-style: double;
+    }
+    .books_contents {
+      background-color: cornsilk;
+      .books_column {
+        border-bottom: 2px solid;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        .column_started {
+          width: 20%;
+        }
+        .column_finidhed {
+          width: 20%;
+        }
+        .column_title {
+          width: 60%;
+        }
+        .column_author {
+          width: 40%;
+        }
+      }
+      .books_data {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid;
+        .started {
+          width: 20%;
+        }
+        .finidhed {
+          width: 20%;
+        }
+        .title {
+          width: 60%;
+        }
+        .author {
+          width: 40%;
+        }
+      }
+    }
+    .footer {
+      background-color: cornsilk;
+      width: 80vw;
+      height: 10px;
+    }
+  }
+}

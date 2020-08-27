@@ -3,7 +3,7 @@
   .books_card
     .card_header
       .header_character
-        %p わたしの本
+        %p= current_user.name
     .card_title
       %p 図書カード
     .add_book
@@ -20,15 +20,15 @@
           本のタイトル
         .column_author
           著者
-        - @books.each do |book|
-          = link_to book_path(book[:id]) do
-            .books_data
-              .started
-                = book.started_at
-              .finidhed
-                = book.finished_at
-              .title
-                = book.title
-              .author 
-                = book.author
+      - @books.each do |book|
+        = link_to book_path(book) do
+          .books_data
+            .started
+              = book.started_at
+            .finidhed
+              = book.finished_at
+            .title
+              = book.title
+            .author 
+              = book.author
       .footer

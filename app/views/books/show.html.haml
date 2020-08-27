@@ -1,2 +1,29 @@
 = render "header"
 
+.contentsBox
+  .headcontent
+    .headcontent__title
+      タイトル
+      = @book.title
+    .headcontent__rating
+  .bookData
+    .bookData__author
+      著者
+      = @book.author
+    .bookData__publisher
+      出版社
+      = @book.publisher
+    .bookData__date
+      .bookData__date--started_at
+        読始日
+        = @book.started_at
+      .bookData__date--finished_at
+        読了日
+        = @book.finished_at
+    .bookData__impression
+      感想
+      = @book.impression
+.editBtn
+  = link_to edit_book_path(@book) do
+    編集
+

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @books = Book.all
+    @books = Book.where(user_id: current_user.id)
   end
 
   def show

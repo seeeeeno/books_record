@@ -7,6 +7,8 @@ class CreateBooks < ActiveRecord::Migration[6.0]
       t.string :publisher
       t.date :started_at
       t.date :finished_at
+      t.string :impression
+      t.references :user, foreign_key: true
       t.timestamps
     end
   end

@@ -35,6 +35,15 @@ class BooksController < ApplicationController
     end
   end
 
+  def destroy
+    @book = Book.destroy(params[:id])
+    if @book.destroy
+      redirect_to users_path
+    else
+      render :show
+    end
+  end
+
   def move_to_index
     unless user_signed_in?
       redirect_to action: :index

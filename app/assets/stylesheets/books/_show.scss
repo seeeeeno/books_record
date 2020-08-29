@@ -13,6 +13,7 @@
       h1 {
         font-size: 50px;
         margin-top: 20px;
+        font-weight: bold;
       }
     }
   }
@@ -53,6 +54,33 @@
         margin-top: 10px;
         padding: 0.5em 1em;
         border: double 4px mediumseagreen;
+      }
+    }
+    .button {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      &__edit {
+        height: 50px;
+        width: 200px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        background-color: mediumseagreen;
+      }
+      &__delete {
+        height: 50px;
+        width: 200px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        background-color: rgb(208, 208, 208);
+        margin-left: 50px;
       }
     }
   }

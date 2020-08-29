@@ -1,0 +1,59 @@
+.contentsBox {
+  padding: 30px 50px;
+  .titleContent {
+    margin-bottom: 50px;
+    &__title {
+      span {
+        color: white;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 5px;
+        background-color: mediumseagreen;
+      }
+      h1 {
+        font-size: 50px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .bookData {
+    &__main {
+      font-size: 25px;
+      margin-bottom: 15px;
+      span {
+        font-weight: bold;
+        margin-right: 30px;
+      }
+      &--author {
+        margin-bottom: 10px;
+      }
+    }
+    &__date {
+      font-size: 20px;
+      display: flex;
+      h3 {
+        margin-right: 15px;
+      }
+      &--started {
+        display: flex;
+        margin-right: 80px;
+      }
+      &--finished {
+        display: flex;
+      }
+    }
+    &__impression {
+      margin-top: 50px;
+      span {
+        font-weight: bold;
+        font-size: 25px;
+      }
+      .impressionBox {
+        min-height: 150px;
+        margin-top: 10px;
+        padding: 0.5em 1em;
+        border: double 4px mediumseagreen;
+      }
+    }
+  }
+}

@@ -1,34 +1,34 @@
 = render "books/header"
 .main_content
-  .books_card
-    .card_header
-      .header_character
-        %p= current_user.name
-    .card_title
-      %p 図書カード
-    .add_book
+  .booksCard
+    .cardHeader
+      .cardHeader__user
+        %b= current_user.name
+    .cardTitle
+      %b 図書カード
+    .addBook
       = link_to new_book_path do
-        = icon('fas', 'plus')
+        = icon('far', 'plus-square')
         本を追加
-    .books_contents
-      .books_column
-        .column_started
+    .booksContents
+      .booksColumn
+        .booksColumn__started
           読始日
-        .column_finidhed
+        .booksColumn__finidhed
           読了日
-        .column_title
+        .booksColumn__title
           本のタイトル
-        .column_author
+        .booksColumn__author
           著者
       - @books.each do |book|
         = link_to book_path(book) do
-          .books_data
-            .started
+          .booksData
+            .booksData__started
               = book.started_at
-            .finidhed
+            .booksData__finidhed
               = book.finished_at
-            .title
+            .booksData__title
               = book.title
-            .author 
+            .booksData__author 
               = book.author
       .footer

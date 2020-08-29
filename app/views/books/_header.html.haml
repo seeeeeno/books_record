@@ -1,12 +1,14 @@
 .Header
+  .HeaderContent
+    .HeaderContent__icon
+      = link_to root_path, class: "icon" do
+        = image_tag ("84553.png"), height: "120px",class: "bookImg"
+        %h1 ほんのきろく
+      
   .headerNav
-    .headerNav__home
-      = link_to "ホーム", root_path
-    .headerNav__user
-      .userStatus
-        - if user_signed_in?
-          = link_to "ログアウト", destroy_user_session_path, method: :delete
-          = link_to "マイページ", users_path(id: current_user)
-        - else
-          = link_to "ログイン", new_user_session_path
-          = link_to "新規登録", new_user_registration_path
+    - if user_signed_in?
+      = link_to "ログアウト", destroy_user_session_path, method: :delete
+      = link_to "マイページ", users_path(id: current_user)
+    - else
+      = link_to "ログイン", new_user_session_path
+      = link_to "新規登録", new_user_registration_path

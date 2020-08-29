@@ -1,0 +1,33 @@
+.Header {margin-bottom: 50px;
+  .HeaderContent {
+    height: 50px;
+    line-height: 50px;
+    margin: 30px 30px 20px 30px;
+    display: flex;
+    &__icon {
+      .icon {
+        text-decoration: none;
+        display: flex;
+        .bookImg {
+          margin-right: 40px;
+        }
+        h1 {
+          font-family: Nico Moji;
+          font-size: 50px;
+          line-height: 120px;
+          color: black;
+        }
+      }
+    }
+  }
+  .headerNav {
+    text-align: right;
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: Nico Moji;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+}

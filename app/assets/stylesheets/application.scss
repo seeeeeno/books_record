@@ -1,5 +1,12 @@
 @import "reset";
+* {
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @import "books";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "users";
+@import "header";

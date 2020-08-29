@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   max-width: 1000px;
+  margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -11,3 +12,4 @@
 @import "users/index";
 @import "books/header";
 @import "books/show";
+@import "books/new.edit";

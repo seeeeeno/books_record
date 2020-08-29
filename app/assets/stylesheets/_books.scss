@@ -1,22 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
-.Header {
-  .headerNav {
-    background-color: rgb(174, 52, 52);
-  }
-}
-
-.Body {
-  .Title_content {
-    font-size: 80px;
-    line-height: 500px;
-    text-align: right;
-    height: 500px;
-    padding-right: 100px;
-    background-image: url('https://d1f5hsy4d47upe.cloudfront.net/6f/6f154d9a74891eef9565aadd157b28e9_t.jpeg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-}
+// .Body {
+//   .Title_content {
+//     &__img {
+//       .bookImg {
+//         height: 150px;
+//       }
+//     }
+//   }
+// }

@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2020_08_27_080912) do
     t.string "publisher"
     t.date "started_at"
     t.date "finished_at"
-    t.string "impression"
+    t.text "impression"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

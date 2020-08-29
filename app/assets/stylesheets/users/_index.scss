@@ -1,73 +1,79 @@
 .main_content {
   display: flex;
   justify-content: center;
-  .books_card {
-    width: 80vw;
-    height: calc(100vh - 350px);
-    .card_header {
-      width: 80vw;
-      height: 40px;
-      display: inline-flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-      .header_character {
-        height: 35px;
-        width: 150px;
-        padding-top: 8px;
-        text-align: center;
+  .booksCard {
+    .cardHeader {
+      &__user {
+        margin: 0 0 0 auto;
+        width: 300px;
+        height: 40px;
         background-color: mediumseagreen;
+        text-align: center;
+        line-height: 40px;
+        font-size: 17px;
       }
     }
-    .card_title {
-      border-top: 10px solid mediumseagreen;
+    .cardTitle {
+      border-top: 15px solid mediumseagreen;
       font-size: 30px;
-      height: 60px;
-      padding: 0 15px;
+      height: 80px;
       background-color: cornsilk;
       border-bottom-style: dotted;
-
+      line-height: 60px;
+      padding-left: 30px;
     }
-    .add_book {
+    .addBook {
       background-color: cornsilk;
       text-align: right;
       height: 70px;
       border-bottom-style: double;
+      padding: 5px 10px;
+      a {
+        // text-decoration: none;
+        color: black;
+      }
     }
-    .books_contents {
+    .booksContents {
       background-color: cornsilk;
-      .books_column {
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .booksColumn {
         border-bottom: 2px solid;
         height: 50px;
         display: flex;
         align-items: center;
-        .column_started {
+        padding: 0 15px;
+        &__started {
           width: 20%;
         }
-        .column_finidhed {
+        &__finidhed {
           width: 20%;
         }
-        .column_title {
+        &__title {
           width: 60%;
         }
-        .column_author {
+        &__author {
           width: 40%;
         }
       }
-      .books_data {
+      .booksData {
         height: 50px;
         display: flex;
         align-items: center;
         border-bottom: 2px solid;
-        .started {
+        padding: 0 15px;
+        &__started {
           width: 20%;
         }
-        .finidhed {
+        &__finidhed {
           width: 20%;
         }
-        .title {
+        &__title {
           width: 60%;
         }
-        .author {
+        &__author {
           width: 40%;
         }
       }

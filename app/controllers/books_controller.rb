@@ -3,6 +3,9 @@ class BooksController < ApplicationController
 
   def index
     @books = Book.all
+    @books.each do |book|
+      @user = User.where(id: book.user_id)
+    end
   end
 
   def new

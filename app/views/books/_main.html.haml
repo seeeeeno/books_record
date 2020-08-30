@@ -1,5 +1,6 @@
--# .Body
--#   .TitleContent
--#     .TitleContent__img
--#     .TitleContent__chara
--#       %p 本の記録
+- @books.each do |book|
+  - @user.each do |user|
+    = user.name
+    = book.title
+    = book.author
+    = book.created_at

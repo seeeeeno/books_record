@@ -1,6 +1,14 @@
 - @books.each do |book|
   - @user.each do |user|
-    = user.name
-    = book.title
-    = book.author
-    = book.created_at
+    .bookInfo
+      .bookInfo__did
+        = user.name
+        さんが新しい本を登録しました！
+      .bookInfo__image
+      .bookInfo__specific
+        .bookInfo__specific--title
+          = book.title
+        .bookInfo__specific--author
+          = book.author
+        .bookInfo__specific--created
+          = book.created_at

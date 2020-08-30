@@ -1,9 +1,49 @@
-// .Body {
-//   .Title_content {
-//     &__img {
-//       .bookImg {
-//         height: 150px;
-//       }
-//     }
-//   }
-// }
+.bookInfoContents {
+  display: flex;
+  justify-content: center;
+  .bookInfo {
+    margin-bottom: 20px;
+    width: 600px;
+    border: double 7px mediumseagreen;
+    border-radius: 5px;
+    &__top {
+      padding: 0 20px;
+      justify-content: space-between;
+      background-color: mediumseagreen;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      &--user {
+        b {
+          color: white;
+        }
+      }
+    }
+    &__main {
+      padding: 10px 20px 0 20px;
+      display: flex;
+      .image {
+        .my-big {
+          font-size: 50px;
+          line-height: 100%;
+          margin-right: 20px;
+          color: mediumseagreen;
+        }
+      }
+      .spec {
+        width: calc(100% - 100px);
+        &__title {
+          font-size: 25px;
+        }
+        &__author {
+
+        }
+      }
+    }
+    &__bottom {
+      font-size: 13px;
+      text-align: right;
+      padding: 0 10px 5px 0;
+    }
+  }
+}

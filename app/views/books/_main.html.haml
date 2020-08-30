@@ -1,14 +1,18 @@
 - @books.each do |book|
   - @user.each do |user|
-    .bookInfo
-      .bookInfo__did
-        = user.name
-        さんが新しい本を登録しました！
-      .bookInfo__image
-      .bookInfo__specific
-        .bookInfo__specific--title
-          = book.title
-        .bookInfo__specific--author
-          = book.author
-        .bookInfo__specific--created
+    .bookInfoContents
+      .bookInfo
+        .bookInfo__top
+          .bookInfo__top--user
+            %b= user.name
+            さんが新しい本を登録しました！
+        .bookInfo__main
+          .image
+            =icon('far', 'smile my-big')
+          .spec 
+            .spec__title
+              %b= book.title
+            .spec__author
+              = book.author
+        .bookInfo__bottom
           = book.created_at

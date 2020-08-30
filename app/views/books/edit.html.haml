@@ -1,16 +1,16 @@
 = render "header"
 .contents
-  %h1.edit 本を編集
+  %h1.edit 本の編集
   .form
     = form_with model: @book, local: true do |f|
       .subtitle
         %b タイトル
         .subtitle__input
-          = f.text_field :title, placeholder: "本のタイトル"
+          = f.text_field :title, placeholder: "本のタイトル", class: "inputForm"
       .subtitle
         %b 著者
         .subtitle__input
-          = f.text_field :author, placeholder: "著者"
+          = f.text_field :author, placeholder: "著者", class: "inputForm"
       .subtitle
         %b 読み始めた日
         .subtitle__input
@@ -22,14 +22,14 @@
       .subtitle
         %b 総ページ数
         .subtitle__input
-          = f.text_field :page, placeholder: "数字で入力"
+          = f.text_field :page, placeholder: "数字で入力", class: "inputForm"
       .subtitle
         %b 出版社
         .subtitle__input
-          = f.text_field :publisher, placeholder: "出版社"
+          = f.text_field :publisher, placeholder: "出版社", class: "inputForm"
       .subtitle
         %b 感想
         .subtitle__input
-          = f.text_area :impression, placeholder: "感想を入力してください"
+          = f.text_area :impression, placeholder: "感想を入力してください", class: "impressionForm"
       .submitBtn
         = f.submit "変更"

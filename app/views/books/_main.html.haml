@@ -10,9 +10,10 @@
           .image
             =icon('far', 'smile my-big')
           .spec 
-            .spec__title
-              %b= book.title
-            .spec__author
-              = book.author
+            = link_to book_path(book) do
+              .spec__title
+                %b= book.title
+              .spec__author
+                = book.author
         .bookInfo__bottom
           = book.created_at

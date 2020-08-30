@@ -3,6 +3,7 @@
   .titleContent {
     margin-bottom: 50px;
     &__title {
+      padding-left: 20px;
       span {
         color: white;
         font-weight: bold;
@@ -27,11 +28,16 @@
       }
       &--author {
         margin-bottom: 10px;
+        padding-left: 20px;
+      }
+      &--publisher {
+        padding-left: 20px;
       }
     }
     &__date {
       font-size: 20px;
       display: flex;
+      padding-left: 20px;
       h3 {
         margin-right: 15px;
       }
@@ -48,12 +54,14 @@
       span {
         font-weight: bold;
         font-size: 25px;
+        padding-left: 20px;
       }
       .impressionBox {
         min-height: 150px;
         margin-top: 10px;
         padding: 0.5em 1em;
         border: double 4px mediumseagreen;
+        border-radius: 5px;
       }
     }
     .button {
@@ -67,7 +75,8 @@
       }
       &__edit {
         height: 50px;
-        width: 200px;
+        width: 150px;
+        border-radius: 5px;
         font-size: 30px;
         text-align: center;
         line-height: 50px;
@@ -75,7 +84,8 @@
       }
       &__delete {
         height: 50px;
-        width: 200px;
+        width: 150px;
+        border-radius: 5px;
         font-size: 30px;
         text-align: center;
         line-height: 50px;

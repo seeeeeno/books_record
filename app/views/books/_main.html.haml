@@ -1,5 +1,19 @@
--# .Body
--#   .TitleContent
--#     .TitleContent__img
--#     .TitleContent__chara
--#       %p 本の記録
+- @books.each do |book|
+  - @user.each do |user|
+    .bookInfoContents
+      .bookInfo
+        .bookInfo__top
+          .bookInfo__top--user
+            %b= user.name
+            さんが新しい本を登録しました！
+        .bookInfo__main
+          .image
+            =icon('far', 'smile my-big')
+          .spec 
+            = link_to book_path(book) do
+              .spec__title
+                %b= book.title
+              .spec__author
+                = book.author
+        .bookInfo__bottom
+          = book.created_at

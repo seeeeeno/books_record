@@ -3,9 +3,9 @@ class BooksController < ApplicationController
 
   def index
     @books = Book.order("created_at DESC").first(10)
-    @books.each do |book|
-      @user = User.where(id: book.user_id)
-    end
+    # @books.each do |book|
+    #   @user = User.where(id: book.user_id)
+    # end
   end
 
   def new

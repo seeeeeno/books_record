@@ -7,8 +7,16 @@
       
   .headerNav
     - if user_signed_in?
-      = link_to "ログアウト", destroy_user_session_path, method: :delete
-      = link_to "マイページ", users_path(id: current_user)
+      = link_to destroy_user_session_path, method: :delete do
+        = icon('fas', 'sign-out-alt')
+        ログアウト
+      = link_to users_path(id: current_user) do
+        = icon('fas', 'user')
+        マイページ
     - else
-      = link_to "ログイン", new_user_session_path
-      = link_to "サインアップ", new_user_registration_path
+      = link_to new_user_session_path do
+        = icon('fas', 'sign-in-alt')
+        ログイン
+      = link_to new_user_registration_path do
+        = icon('fas', 'user-plus')
+        サインアップ

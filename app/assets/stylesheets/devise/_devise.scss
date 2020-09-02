@@ -13,7 +13,7 @@ form {
   text-align: center;
   .field {
     height: 50px;
-    margin: 50px auto;
+    margin: 50px auto 30px auto;
     label {
       font-weight: bold;
       font-size: 20px;
@@ -24,14 +24,13 @@ form {
       padding: 10px;
       font-size: 18px;
     }
-    .checkField {
-      .checkBox {
-        transform: scale(1.5);
-      }
+    .checkBox {
+      transform: scale(2);
+      margin-right: 10px;
     }
   }
   .actions {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     text-align: center;
     .loginBtn {
       height: 45px;
@@ -42,6 +41,17 @@ form {
       border: none;
       border-radius: 5px;
       background-color: mediumseagreen;
+    }
+    .registerBtn {
+      height: 45px;
+      width: 100px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      background-color: mediumseagreen;
+      margin-top: 30px;
     }
   }
 }

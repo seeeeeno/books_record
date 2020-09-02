@@ -25,12 +25,13 @@
       %span 感想
       .impressionBox
         %p= @book.impression
-    .button
-      = link_to edit_book_path(@book), class: "btnStyle" do
-        .button__edit
-          = icon('fa', 'edit')
-          %b 編集
-      = link_to book_path(@book), method: :delete, class: "btnStyle" do
-        .button__delete
-          = icon('fa','trash-alt')
-          %b 削除
+    - if user_signed_in? && current_user.id == @book.user_id
+      .button
+        = link_to edit_book_path(@book), class: "btnStyle" do
+          .button__edit
+            = icon('fa', 'edit')
+            %b 編集
+        = link_to book_path(@book), method: :delete, class: "btnStyle" do
+          .button__delete
+            = icon('fa','trash-alt')
+            %b 削除

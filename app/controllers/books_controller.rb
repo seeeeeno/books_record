@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :move_to_index, except: [:index]
+  before_action :move_to_index, except: [:index, :show]
 
   def index
     @books = Book.order("created_at DESC").first(10)

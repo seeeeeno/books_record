@@ -24,14 +24,15 @@ form {
       padding: 10px;
       font-size: 18px;
     }
-  }
-  .checkField {
-    .checkBox {
-      transform: scale(1.5);
+    .checkField {
+      .checkBox {
+        transform: scale(1.5);
+      }
     }
   }
   .actions {
     margin-bottom: 30px;
+    text-align: center;
     .loginBtn {
       height: 45px;
       width: 100px;

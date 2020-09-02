@@ -1,4 +1,6 @@
-.Header {margin-bottom: 50px;
+.Header {
+  margin-bottom: 50px;
+  padding: 0 50px;
   .HeaderContent {
     height: 50px;
     line-height: 50px;
@@ -14,7 +16,7 @@
         h1 {
           font-family: Nico Moji;
           font-size: 50px;
-          line-height: 120px;
+          line-height: 100px;
           color: black;
         }
       }
@@ -26,8 +28,8 @@
       text-decoration: none;
       color: black;
       font-family: Nico Moji;
-      font-size: 20px;
-      margin-left: 20px;
+      font-size: 23px;
+      margin-right: 50px;
     }
   }
 }

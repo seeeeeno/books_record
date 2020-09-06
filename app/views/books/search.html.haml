@@ -1,4 +1,9 @@
 = render "header"
+= form_with(url: search_books_path, local: true, method: :get) do |f|
+  .inputForm
+    = f.text_field :keyword, placeholder: "タイトルから探す", class: "inputForm__area"
+    %button{type: "submit", class: "inputForm__btn"}
+      = icon('fas', 'search', class: "inputForm__btn--icon")
 - @books.each do |book|
   -# - @user.each do |user|
   .bookInfoContents

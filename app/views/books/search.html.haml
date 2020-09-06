@@ -18,9 +18,12 @@
           =icon('far', 'smile my-big')
         .spec 
           = link_to book_path(book) do
-            .spec__title
-              %b= book.title
-            .spec__author
-              = book.author
-      .bookInfo__bottom
-        = book.created_at
+            .specContents
+              .specLeft
+                .specLeft__title
+                  %b= book.title
+                .specLeft__author
+                  = book.author
+              .specRight
+                .specRight__created
+                  = book.created_at

@@ -25,7 +25,7 @@
   justify-content: center;
   .bookInfo {
     margin-bottom: 20px;
-    width: 800px;
+    width: 700px;
     border: double 7px mediumseagreen;
     border-radius: 5px;
     &__top {
@@ -51,13 +51,13 @@
       }
     }
     &__main {
-      padding: 10px 20px 0 20px;
+      padding: 10px 20px 0 30px;
       display: flex;
       .image {
         .my-big {
-          font-size: 50px;
-          line-height: 100%;
-          margin-right: 20px;
+          font-size: 80px;
+          line-height: 120%;
+          margin-right: 40px;
           color: mediumseagreen;
         }
       }
@@ -66,19 +66,25 @@
         a {
           color: black;
           text-decoration: none;
-        }
-        &__title {
-          font-size: 25px;
-        }
-        &__author {
-
+          .specContents {
+            .specLeft {
+              &__title {
+                font-size: 30px;
+                margin-bottom: 5px;
+              }
+              &__author {
+                font-size: 17px;
+              }
+            }
+            .specRight {
+              &__created {
+                text-align: right;
+                margin-bottom: 5px;
+              }
+            }
+          }
         }
       }
-    }
-    &__bottom {
-      font-size: 13px;
-      text-align: right;
-      padding: 0 10px 5px 0;
     }
   }
 }

@@ -9,7 +9,7 @@ class BooksController < ApplicationController
   end
 
   def search
-    @books = Book.search(params[:keyword])
+    @books = Book.search(params[:keyword]).order("created_at DESC")
   end
 
   def new

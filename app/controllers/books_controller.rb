@@ -8,6 +8,10 @@ class BooksController < ApplicationController
     # end
   end
 
+  def search
+    @books = Book.search(params[:keyword])
+  end
+
   def new
     @book = Book.new
   end

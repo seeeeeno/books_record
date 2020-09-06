@@ -1,9 +1,31 @@
+.inputForm {
+  margin: 0 40px 20px 0;
+  &__area {
+    height: 40px;
+    width: 500px;
+    padding: 0 5px;
+    vertical-align : middle;
+    position: relative;
+  }
+  &__btn {
+    height: 40px;
+    width: 40px;
+    border: none;
+    vertical-align : middle;
+    background-color: mediumseagreen;
+    position: absolute;
+    &--icon {
+      font-size: 25px;
+      color: white;
+    }
+  }
+}
 .bookInfoContents {
   display: flex;
   justify-content: center;
   .bookInfo {
     margin-bottom: 20px;
-    width: 600px;
+    width: 550px;
     border: double 7px mediumseagreen;
     border-radius: 5px;
     &__top {

@@ -1,0 +1,19 @@
+= render "books/header"
+.contents
+  %h1.profile プロフィール編集
+  .form
+    = form_with model: @user, local: true do |f|
+      .subtitle
+        %b ユーザー名
+        .subtitle__input
+          = f.text_field :name, class: "inputForm"
+      .subtitle
+        %b メールアドレス
+        .subtitle__input
+          = f.text_field :email, class: "inputForm"
+      .subtitle
+        %b プロフィール画像
+        .subtitle__input
+          = f.attachment_field :profileimage, class: "imageSelect"
+      .submitBtn
+        = f.submit value: "更新", class: "profileUpdate"

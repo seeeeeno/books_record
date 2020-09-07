@@ -1,3 +1,11 @@
+.profile {
+  margin: 0 70px;
+  .profileImage {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+}
 .main_content {
   display: flex;
   justify-content: center;

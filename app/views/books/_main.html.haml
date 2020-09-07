@@ -14,7 +14,7 @@
           新しい本が登録されました
       .bookInfo__main
         .image
-          =icon('far', 'smile my-big')
+          = attachment_image_tag @user, :profileimage, fallback: 'pet_darui_dog.png', class: "profileImage"
         .spec 
           = link_to book_path(book) do
             .specContents

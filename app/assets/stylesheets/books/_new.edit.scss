@@ -1,5 +1,5 @@
 .contents {
-  h1 {
+  .newEdit {
     font-weight: bold;
     font-size: 30px;
     border: double 7px mediumseagreen;
@@ -7,6 +7,17 @@
     text-align: center;
     line-height: 50px;
     width: 250px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  .profile {
+    font-weight: bold;
+    font-size: 30px;
+    border: double 7px mediumseagreen;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    width: 300px;
     height: 60px;
     margin: 0 auto;
   }
@@ -54,6 +65,9 @@
         border: none;
         border-radius: 5px;
         background-color: mediumseagreen;
+      }
+      .profileUpdate {
+        margin-top: 30px;
       }
     }
   }

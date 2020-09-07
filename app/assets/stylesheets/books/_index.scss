@@ -55,11 +55,17 @@
       padding: 10px 20px 0 30px;
       display: flex;
       .image {
-        .my-big {
-          font-size: 80px;
+        // .my-big {
+        //   font-size: 80px;
+        //   line-height: 120%;
+        //   margin-right: 40px;
+        //   color: mediumseagreen;
+        // }
+        .profileImage {
+          border-radius: 50%;
+          height: 100px;
           line-height: 120%;
-          margin-right: 40px;
-          color: mediumseagreen;
+          margin: auto 40px auto 0;
         }
       }
       .spec {

@@ -24,71 +24,50 @@
 .bookInfoContents {
   display: flex;
   justify-content: center;
-  .bookInfo {
-    margin-bottom: 20px;
-    width: 700px;
-    border: double 7px mediumseagreen;
-    border-radius: 5px;
-    &__top {
-      padding: 0 20px;
-      justify-content: space-between;
-      background-image:linear-gradient(-45deg, rgba(69, 206, 131, 0.756) 25%, rgba(60, 179, 114, 0.694) 25%, rgba(60, 179, 114, 0.694) 50%, rgba(69, 206, 131, 0.756)  50%, rgba(69, 206, 131, 0.756) 75%, rgba(60, 179, 114, 0.694) 75%, rgba(60, 179, 114, 0.694));
-      text-align: center;
-      height: 40px;
-      line-height: 40px;
-      &--user {
-        b {
-          color: white;
-          text-shadow    : 
-          1px  1px 1px #003366,
-          -1px  1px 1px #003366,
-          1px -1px 1px #003366,
-          -1px -1px 1px #003366,
-          1px  0px 1px #003366,
-          0px  1px 1px #003366,
-          -1px  0px 1px #003366,
-          0px -1px 1px #003366;  
-        }
+  border: double 7px mediumseagreen;
+  width: 700px;
+  margin: 0 auto 10px auto;
+  padding: 10px 15px;
+  .userContents {
+    text-align: center;
+    margin: 0 10px;
+    &__image {
+      .profileImage {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        line-height: 120%;
       }
     }
-    &__main {
-      padding: 10px 20px 0 30px;
-      display: flex;
-      .image {
-        // .my-big {
-        //   font-size: 80px;
-        //   line-height: 120%;
-        //   margin-right: 40px;
-        //   color: mediumseagreen;
-        // }
-        .profileImage {
-          border-radius: 50%;
-          height: 100px;
-          line-height: 120%;
-          margin: auto 40px auto 0;
+    &__name {
+      font-size: 18px;
+    }
+  }
+  .spec {
+    width: 100%;
+    margin: 15px 20px 0 20px;
+    position: relative;
+    a {
+      color: black;
+      text-decoration: none;
+      .specContents {
+        .specTop {
+          &__title {
+            font-size: 30px;
+            margin-bottom: 5px;
+          }
+          &__author {
+            font-size: 17px;
+          }
         }
-      }
-      .spec {
-        width: calc(100% - 100px);
-        a {
-          color: black;
-          text-decoration: none;
-          .specContents {
-            .specLeft {
-              &__title {
-                font-size: 30px;
-                margin-bottom: 5px;
-              }
-              &__author {
-                font-size: 17px;
-              }
-            }
-            .specRight {
-              &__created {
-                text-align: right;
-                margin-bottom: 5px;
-              }
-            }
+        .specBottom {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          font-size: 18px;
+          &__created {
+            text-align: right;
+            margin-bottom: 5px;
           }
         }
       }

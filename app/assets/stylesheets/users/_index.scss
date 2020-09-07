@@ -1,9 +1,18 @@
 .profile {
   margin: 0 70px;
+  display: flex;
   .profileImage {
     border-radius: 50%;
     height: 200px;
     width: 200px;
+    margin-right: 30px;
+  }
+  &__user {
+    margin: 30px 0 30px 0;
+    &--name {
+      font-size: 30px;
+      font-weight: bold;
+    }
   }
 }
 .main_content {

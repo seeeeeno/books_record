@@ -2,8 +2,11 @@
 .profile
   .profile__image
     = attachment_image_tag @user, :profileimage, fallback: 'pet_darui_dog.png', class: "profileImage"
-    = current_user.name
-    = link_to "プロフィール編集", edit_user_path(@user)
+  .profile__user
+    .profile__user--name
+      = current_user.name
+    .profile__user--edit
+      = link_to "プロフィール編集", edit_user_path(@user)
 
 .main_content
   .booksCard

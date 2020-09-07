@@ -5,7 +5,37 @@
     .titleContent__title
       %span タイトル
       %h1= @book.title
-    .titleContent__rating
+    .titleContent__evaluation
+      - if @book.evaluation == 1
+        = icon('fas','star starNum')
+        = icon('far','star starNum')
+        = icon('far','star starNum')
+        = icon('far','star starNum')
+        = icon('far','star starNum')
+      - elsif @book.evaluation == 2
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('far','star starNum')
+        = icon('far','star starNum')
+        = icon('far','star starNum')
+      - elsif @book.evaluation == 3
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('far','star starNum')
+        = icon('far','star starNum')
+      - elsif @book.evaluation == 4
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('far','star starNum')
+      - else
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
   .bookData
     .bookData__main
       .bookData__main--author

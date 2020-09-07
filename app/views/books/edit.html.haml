@@ -28,6 +28,11 @@
         .subtitle__input
           = f.text_field :publisher, placeholder: "出版社", class: "inputForm"
       .subtitle
+        %b 評価
+        .subtitle__input
+          = icon('fas', 'star star')
+          = f.select :evaluation, {'１': 1, '２': 2, '３': 3, '４': 4, '５': 5}, { include_blank: '選択'}, require: true, class: "evaluation"
+      .subtitle
         %b 感想
         .subtitle__input
           = f.text_area :impression, placeholder: "感想を入力してください", class: "impressionForm"

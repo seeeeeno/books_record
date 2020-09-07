@@ -1,31 +1,24 @@
-= render "header"
 .contents
-  %h1.new 本の追加
+  本を追加する
   .form
     = form_with model: @book, local: true do |f|
-      .subtitle
-        %b 本のタイトル
-        .subtitle__input
-          = f.text_field :title, placeholder: "本のタイトル", class: "inputForm"
-      .subtitle
-        %b 著者
-        .subtitle__input
-          = f.text_field :author, placeholder: "著者", class: "inputForm"
-      .subtitle
-        %b 読み始めた日
-        .subtitle__input
-          != sprintf(f.date_select(:started_at, require:true, use_month_numbers:true, date_separator:'%s'),'年 ','月 ')+'日'
-      .subtitle
-        %b 読み終わった日
-        .subtitle__input
-          != sprintf(f.date_select(:finished_at, require:true, use_month_numbers:true, prompt: "---", date_separator:'%s'),'年 ','月 ')+'日'
-      .subtitle
-        %b 総ページ数
-        .subtitle__input
-          = f.text_field :page, placeholder: "数字で入力", class: "inputForm"
-      .subtitle
-        %b 出版社
-        .subtitle__input
-          = f.text_field :publisher, placeholder: "出版社", class: "inputForm"
+      .bookTitle
+        %p タイトル
+        = f.text_field :title, placeholder: "本のタイトル"
+      .bookAuthor
+        %p 著者
+        = f.text_field :author, placeholder: "著者"
+      .start
+        %p 読み始めた日
+        != sprintf(f.date_select(:started_at, require:true, use_month_numbers:true, date_separator:'%s'),'年 ','月 ')+'日'
+      .finished
+        %p 読み終わった日
+        != sprintf(f.date_select(:finished_at, require:true, use_month_numbers:true, prompt: "---", date_separator:'%s'),'年 ','月 ')+'日'
+      .bookPage
+        %p 総ページ数
+        = f.text_field :page, placeholder: "数字で入力"
+      .publisher
+        %p 出版社
+        = f.text_field :publisher, placeholder: "出版社"
       .submitBtn
         = f.submit "保存"

@@ -18,22 +18,29 @@
     }
     .subtitle {
       margin-bottom: 10px;
-      .inputForm {
-        height: 40px;
-        width: 300px;
-        padding: 10px;
-        font-size: 18px;
-      }
-      select {
-        height: 35px;
-        padding: 0 10px;
-        font-size: 20px;
-      }
-      .impressionForm {
-        min-height: 200px;
-        width: 450px;
-        font-size: 20px;
-        padding: 5px 10px;
+      &__input {
+        .inputForm {
+          height: 40px;
+          width: 300px;
+          padding: 10px;
+          font-size: 18px;
+          margin: auto;
+        }
+        select {
+          height: 35px;
+          padding: 0 10px;
+          font-size: 20px;
+        }
+        .star {
+          font-size: 30px;
+          color: gold;
+        }
+        .impressionForm {
+          min-height: 200px;
+          width: 450px;
+          font-size: 20px;
+          padding: 5px 10px;
+        }
       }
     }
     .submitBtn {

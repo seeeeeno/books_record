@@ -2,8 +2,8 @@
   padding: 30px 150px;
   .titleContent {
     margin-bottom: 50px;
+    padding-left: 20px;
     &__title {
-      padding-left: 20px;
       span {
         color: white;
         font-weight: bold;
@@ -15,6 +15,13 @@
         font-size: 50px;
         margin-top: 20px;
         font-weight: bold;
+      }
+    }
+    &__evaluation {
+      margin: 10px 40px 0 0;
+      .starNum {
+        font-size: 25px;
+        color: gold;
       }
     }
   }

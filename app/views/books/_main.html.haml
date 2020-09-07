@@ -9,12 +9,11 @@
     .bookInfo
       .bookInfo__top
         .bookInfo__top--user
-          -# %b= user.name
-          -# さんが新しい本を登録しました！
-          新しい本が登録されました
+          %b= book.user.name
+          さんが本を登録しました！
       .bookInfo__main
         .image
-          = attachment_image_tag @user, :profileimage, fallback: 'pet_darui_dog.png', class: "profileImage"
+          = attachment_image_tag book.user, :profileimage, fallback: 'pet_darui_dog.png', class: "profileImage"
         .spec 
           = link_to book_path(book) do
             .specContents

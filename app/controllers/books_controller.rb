@@ -2,10 +2,12 @@ class BooksController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @books = Book.order("created_at DESC").first(10)
-    # @books.each do |book|
-    #   @user = User.where(id: book.user_id)
-    # end
+    @books = Book.all
+    # @user = []
+    #   @books.each do |book|
+    #     user = User.where(id: book.user_id)
+    #     @user << user
+    #   end
   end
 
   def search

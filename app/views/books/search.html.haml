@@ -4,26 +4,25 @@
     = f.text_field :keyword, placeholder: "タイトルから探す", class: "inputForm__area"
     %button{type: "submit", class: "inputForm__btn"}
       = icon('fas', 'search', class: "inputForm__btn--icon")
-- @books.each do |book|
-  -# - @user.each do |user|
-  .bookInfoContents
-    .bookInfo
-      .bookInfo__top
-        .bookInfo__top--user
-          -# %b= user.name
-          -# さんが新しい本を登録しました！
-          新しい本が登録されました
-      .bookInfo__main
-        .image
-          =icon('far', 'smile my-big')
-        .spec 
-          = link_to book_path(book) do
-            .specContents
-              .specLeft
-                .specLeft__title
-                  %b= book.title
-                .specLeft__author
-                  = book.author
-              .specRight
-                .specRight__created
-                  = book.created_at
+.mainBox
+  - @books.each do |book|
+    .bookInfoContents
+      .userContents
+        .userContents__image
+          = attachment_image_tag book.user, :profileimage, fallback: 'pet_darui_dog.png', class: "profileImage"
+        .userContents__name
+          %b= book.user.name
+      .spec 
+        = link_to book_path(book) do
+          .specContents
+            .specTop
+              .specTop__title
+                %b= book.title
+              .specTop__author
+                = book.author
+            .specBottom
+              .specTop__created
+                = book.created_at.strftime("%Y年%m月%d日 %H時%M分")
+.topBtn
+  = link_to "#" do
+    = icon('fa', 'chevron-up topIcon')

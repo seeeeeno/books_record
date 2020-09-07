@@ -26,7 +26,8 @@ Haml/SCSS/Ruby/Ruby on Rails/GitHub
 * または、作者毎に平均評価を表示できる(好きな作家の発見)
 ## DB設計
 ### usersテーブル
-|Column|Type||Option|
+|Column|Type|Option|
+|------|----|------|
 |email|string|null: false|
 |password|string|null: false|
 |name|string||
@@ -34,7 +35,8 @@ Haml/SCSS/Ruby/Ruby on Rails/GitHub
 #### Association
 * has_many :books
 ### booksテーブル
-|Column|Type||Option|
+|Column|Type|Option|
+|------|----|------|
 |title|string||
 |author|string||
 |page|integer||

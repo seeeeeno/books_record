@@ -45,15 +45,17 @@
       font-size: 20px;
       display: flex;
       padding-left: 20px;
+      font-size: 23px;
       h3 {
         margin-right: 15px;
       }
       &--started {
         display: flex;
-        margin-right: 80px;
+        margin: auto 50px 0 0;
       }
       &--finished {
         display: flex;
+        margin: auto 0;
       }
     }
     &__impression {

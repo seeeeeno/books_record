@@ -30,12 +30,14 @@
         = icon('fas','star starNum')
         = icon('fas','star starNum')
         = icon('far','star starNum')
+      - elsif @book.evaluation == 5
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
+        = icon('fas','star starNum')
       - else
-        = icon('fas','star starNum')
-        = icon('fas','star starNum')
-        = icon('fas','star starNum')
-        = icon('fas','star starNum')
-        = icon('fas','star starNum')
+        %p 評価していません
   .bookData
     .bookData__main
       .bookData__main--author

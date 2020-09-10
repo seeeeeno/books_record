@@ -22,6 +22,8 @@
   }
 }
 .mainBox {
+  height: 1300px;
+  overflow: scroll;
   .bookInfoContents {
     display: flex;
     justify-content: center;

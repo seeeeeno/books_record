@@ -62,3 +62,5 @@ gem "refile-mini_magick"
 gem 'fog-aws'
 gem 'dotenv-rails'
 gem "refile-s3"
+gem 'carrierwave'
+gem 'mini_magick'
